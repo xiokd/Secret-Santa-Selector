@@ -15,7 +15,7 @@ public class secretSanta {
 			ArrayList<String> nameList = nameGenerator(args[0]);
 			listPrinter(numbers, nameList, totalRecords);
 			do {
-				System.out.println("\n1) Reroll");
+				System.out.println("\n1) Reshuffle");
 				System.out.println("2) Quit");
 				System.out.print("Choice: ");
 				choice = Integer.parseInt(kb.nextLine());
@@ -30,7 +30,7 @@ public class secretSanta {
 		for(int i = 0; i < listSize; i++) {
 			tempList.add(i);
 		}
-    tempList.trimToSize();
+    	tempList.trimToSize();
 		Collections.shuffle(tempList);
 
 		return tempList;
@@ -60,7 +60,7 @@ public class secretSanta {
 			String nameStart = nameList.get(i);
 			String nameChosen = nameList.get(randNum);
 
-			System.out.println("\t\t  " + nameStart + " : " + nameChosen);
+			System.out.println("\t  " + nameStart + "\t---Gifts-->\t" + nameChosen);
 		}
 		System.out.print("==============================================");
 	}
