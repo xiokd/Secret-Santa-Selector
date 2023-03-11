@@ -30,7 +30,7 @@ public class secretSanta {
 		for(int i = 0; i < listSize; i++) {
 			tempList.add(i);
 		}
-    	tempList.trimToSize();
+    		tempList.trimToSize();
 		Collections.shuffle(tempList);
 
 		return tempList;
@@ -45,7 +45,7 @@ public class secretSanta {
 		}
 
 		fileReader.close();
-       tempList.trimToSize();
+       		tempList.trimToSize();
 
 		return tempList;
 	}
